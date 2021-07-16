@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+   
+  
+    <h1 id="update_name">WEATHER APP</h1>
+    <div class="search"> 
+<form action="/"  method="POST">
+ 
+
+    <div class="wrap">
+        <div class="search">
+            <input type="text" class="searchbar"placeholder="enter city name" name="cityname">
+            <button type="submit" class="searchButton">
+              GO
+             </button>
+            
+        </div>
+     </div>
+
+
+</form>
+</div> 
+
+<br>
+<div class="box">
+<h2><%= (typeof cityname != "undefined" ? cityname : "") %></h2>
+<h2><%= temperature %> </h2>
+<img src="<%= (typeof photo != "undefined" ? photo : "") %>"  class="center">
+<h2><%= (typeof description != "undefined" ? description : "") %></h2>
+<div>
+
+
+ 
+
+    
+    
+   
+
+
+</body>
+<!-- <script src="javasc.js"></script> -->
+</html>
