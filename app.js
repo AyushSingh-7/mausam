@@ -2,6 +2,7 @@ const express = require("express");
 const https = require("https");
 const bodyparsar = require("body-parser");
 const { response } = require("express");
+const port=process.env.PORT || 3000;
 
 var weatherdata=""
 var city=""
@@ -90,6 +91,6 @@ city="enter a correct city name"
 
 })
 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log("server is running");
 })
